@@ -1,7 +1,2 @@
-/dts-v1/;
-
 / {
-    chosen {
-        // zephyr,display = &st7789;
-    };
 };
