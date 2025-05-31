@@ -2,6 +2,6 @@
 
 / {
     chosen {
-        zephyr,display = &st7789;
+        // zephyr,display = &st7789;
     };
 };
