@@ -1,4 +1,9 @@
 config PROSPECTOR_LAYER_ROLLER_ALL_CAPS
+# Prospector ZMK Module Configuration
+
+menu "Prospector Adapter Settings"
+
+config PROSPECTOR_LAYER_ROLLER_ALL_CAPS
     bool "Convert layer names to all caps"
     default n
 
@@ -15,3 +20,10 @@ config PROSPECTOR_FIXED_BRIGHTNESS
     default 50
     range 1 100
     depends on !PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR
+
+# Optional behavior hook flag
+config ZMK_SENSOR_BEHAVIOR
+    bool "Enable sensor-based behavior"
+    default y
+
+endmenu
